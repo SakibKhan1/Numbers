@@ -14,9 +14,9 @@ bool isDivisibleBy(int n, int d){; // 2 int parameters
     if (d == 0)
         return false;
     else if (n % d == 0)
-        return true;
+        return true; // 1 
     else    
-        return false;
+        return false; // 0 
 }
 
 bool isPrime(int n){; // checks prime 
@@ -33,7 +33,7 @@ int nextPrime(int n){;
         return 2;
     int prime = n;
     bool num = false;
-    while (!num) {
+    while (!num) { //! means not 
         prime++;
 
         if (isPrime(prime))
@@ -47,12 +47,12 @@ int countPrimes(int a, int b){;
     for (int i = a; i <= b; i++)
     {
         if (isPrime(i))
-            primenum++;
+            primenum++; //increments by 1 
     }
     return primenum;
 }
 
-bool isTwinPrime(int n){;
+bool isTwinPrime(int n){; // returns true or false so bool is used
     if(!isPrime(n))
         return false;
     if(isPrime(n-2) || isPrime(n+2))
@@ -82,7 +82,7 @@ int largestTwinPrime(int a, int b){;
 
 int main()
 {
-    int n, d;
+    int n, d; // 2 num inputs
     bool num;
     cout << "Enter first number: ";
     cin >> n;
